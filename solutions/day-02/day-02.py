@@ -1,8 +1,4 @@
-#!/usr/bin/env python3
-
-data = ""
-with open("day-02-input.txt") as file: 
-    data = file.read().splitlines() 
+#!/usr/bin/env python3 
 
 def solve_part1(data): 
     forward = 0 
@@ -41,6 +37,10 @@ def solve_part2(data):
     
     return (forward * depth)
 
+data = ""
+with open("day-02-input.txt") as file: 
+    data = file.read().splitlines() 
+    
 part1 = solve_part1(data)
 print("Part 1: {}".format(part1))
 

@@ -17,9 +17,9 @@ def solve_part2(data):
             increment += 1
     return increment
 
-data = []
-for line in open("day-01-input.txt").readlines():
-    data.extend([int(n) for n in line.split()])
+data = ""
+with open("day-01-input.txt") as file: 
+    data = file.read().splitlines() 
 
 part1 = solve_part1(data)
 print("Part 1: {}".format(part1))
